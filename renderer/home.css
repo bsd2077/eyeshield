@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2bb7a4;
+}
+
+.version {
+    position: absolute;
+    font-size: 15px;
+    bottom: 0;
+    right: 5px;
+
+}
+
+.duration_title {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+    font-size: 20px;
+    top: 30%;
+    left: 50%;
+    font-family: "Microsoft YaHei";
+
+    transform: translate(-50%, -50%);
+    min-width: 200px;
+    max-height: 50px;
+
+}
+
+
+.lan_setting {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+    font-size: 17px;
+    top: 55%;
+    left: 50%;
+    align-items: center;
+    font-family: "Microsoft YaHei";
+
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    min-width: 300px;
+
+}
+
+.tip {
+    font-family: "Microsoft YaHei";
+    text-align: center;
+    font-size: 70px;
+    margin: 50vh auto 0;
+
+    transform: translateY(-50%);
+}
+
+.allset {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 90vh;
+    right: 1vw;
+
+
+}
+
+.labe {
+    font-size: 12px;
+
+}
+
+.chec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.set {
+    background: darkorange;
+
+
+}
+
+.input_minutes {
+    width: 7vw;
+    font-size: 20px;
+
+}
+
+.div_setting {
+    display: none;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    background: brown;
+    width: 35vw;
+    height: 35vh;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.conform_set {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
