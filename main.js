@@ -3,18 +3,18 @@ const path = require("path");
 const {resolve} = require("node:path");
 const {readFile, writeFile} = require("node:fs/promises");
 
-try {
+/*try {
     require('electron-reloader')(module);
 } catch {
-}
+}*/
 
 const createWindow = async () => {
 
     let locale
     let language
-    let apppath = app.getAppPath()
+  /*  let apppath = app.getAppPath()*/
 
-    /*    let apppath=resolve(app.getPath("exe"),'../resources')*/
+        let apppath=resolve(app.getPath("exe"),'../resources')
 
     try {
         const filePath = resolve(apppath, './conf/i18n/locale.json');
@@ -176,7 +176,7 @@ const createWindow = async () => {
     win.removeMenu()
     win.title = locale.title;
     await win.loadFile('./renderer/index.html')
-    win.webContents.openDevTools()
+    /*win.webContents.openDevTools()*/
     win.show()
 
 }
